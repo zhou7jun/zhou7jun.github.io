@@ -1,0 +1,22 @@
+layout: post
+title: "使用adb删除安卓手机自带App"
+date: YYYY-MM-DD hh:mm:ss -0000
+categories: Android
+
+打开手机开发者模式和USB调试，连接到电脑
+
+使用adb命令查看所有app包名
+
+>adb shell pm list packages
+
+找到要卸载的app的包名，如com.example.app，执行如下命令进行卸载
+
+>adb uninstall --user 0 com.example.app
+
+如果不确定App对应的包名，可通过黑阈app查看图标和复制包名
+
+或者打开App后执行如下命令查看当前界面的名称
+
+>adb shell dumpsys window | findstr mCurrentFocus
+
+执行结果中{}内第一个斜杠前的那一段即为App的包名
