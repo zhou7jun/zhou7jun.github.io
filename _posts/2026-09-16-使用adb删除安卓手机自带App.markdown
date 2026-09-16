@@ -1,7 +1,9 @@
+---
 layout: post
 title: "使用adb删除安卓手机自带App"
-date: YYYY-MM-DD hh:mm:ss -0000
+date: 2026-09-16 16:34:00 -0000
 categories: Android
+---
 
 打开手机开发者模式和USB调试，连接到电脑
 
